@@ -1,0 +1,21 @@
+<configuration monitorInterval="60">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%-4r [%t] %-5p %c{1.} - %msg%n"/>
+        </Console>
+    </Appenders>
+<!--    <Loggers>-->
+<!--        <Logger name="com.suhj.MyLogger" level="DEBUG"/>-->
+<!--        <Root level="DEBUG">-->
+<!--            <AppenderRef ref="Console"/>-->
+<!--        </Root>-->
+<!--    </Loggers>-->
+    <Loggers>
+        <Logger name="com.suhj.MyLogger" level="INFO">
+            <AppenderRef ref="Console" />
+        </Logger>
+<!--        <Root level="INFO">-->
+<!--            <AppenderRef ref="Console" />-->
+<!--        </Root>-->
+    </Loggers>
+</configuration>
